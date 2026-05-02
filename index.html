@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Villa Luxe</title>
+<link rel="icon" href="vecteezy_villa-logo-design_.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="logo">Villa Luxe</div>
+  <div class="menu">
+    <a href="#about">Tentang</a>
+    <a href="#gallery">Galeri</a>
+    <a href="#pricing">Harga</a>
+    <a href="#contact">Kontak</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Luxury Private Villa</h1>
+    <p>Experience the ultimate comfort</p>
+    <button onclick="scrollToSection('contact')" class="btn-wa">
+      💬 Booking via WhatsApp
+    </button>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section fade">
+  <h2>Fasilitas Premium</h2>
+  <div class="features">
+    <div>Private Pool</div>
+    <div>WiFi Cepat</div>
+    <div>Smart TV</div>
+    <div>BBQ Area</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section fade">
+  <div class="grid">
+    <img src="pexels-abid-ali-150086727-10647324.jpg">
+    <img src="pexels-ahmetcotur-19075389.jpg">
+    <img src="pexels-gottapics-13777760.jpg">
+    <img src="pexels-semih-basaran-353570345-29679172.jpg">
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section fade">
+  <h2>Harga Menginap</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Standard</h3>
+      <p class="price">Rp1.500.000 / malam</p>
+    </div>
+
+    <div class="card highlight">
+      <h3>Premium</h3>
+      <p class="price">Rp2.500.000 / malam</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section location fade">
+  <h2>Lokasi Villa</h2>
+
+  <div class="location-wrapper">
+
+    <!-- MAP -->
+    <div class="map-card">
+      <iframe src="https://www.google.com/maps?q=bali&output=embed"></iframe>
+    </div>
+
+    <!-- INFO -->
+    <div class="location-card">
+      <h3>Villa Luxe</h3>
+
+      <p class="alamat">
+        Jl. Pantai Indah No.88<br>
+        Bali, Indonesia
+      </p>
+
+      <p class="desc">
+        Lokasi strategis dekat pantai, restoran, dan tempat wisata populer.
+      </p>
+
+      <button onclick="chatWA()" class="btn-wa">
+        📍 Booking Sekarang
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade">
+  <h2>Reservasi Sekarang</h2>
+  <button onclick="chatWA()" class="btn-wa">
+    💬 Chat WhatsApp
+  </button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
